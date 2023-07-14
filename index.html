@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="navbar-logo">
+        <a href="">Dawud <span>Portofolio</span></a>
+      </div>
+
+      <div class="navbar-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-icon">
+        <a href=""><i id="hamburger-menu" data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section id="home">
+      <main>
+        <div class="hero">
+          <div class="hero-text">
+            <h3 class="text">Hallo</h3>
+            <h1>I'M <span class="multi-text"></span></h1>
+            <p>
+              Di sini saya akan menunjukan beberapa dari skill yang saya bisa di
+              dunia it, dan di sini saya juga akan memperkenalkan berbagai
+              project yang telah saya buat sendiri
+            </p>
+            <button class="download">Download CV</button>
+            <div class="icon">
+              <a href="#"><i class="instagram" data-feather="instagram"></i></a>
+              <a href="#"><i class="facebook" data-feather="facebook"></i></a>
+              <a href="#"><i class="twitter" data-feather="twitter"></i></a>
+            </div>
+          </div>
+
+          <img src="img/astronot-removebg-preview.png" alt="" />
+        </div>
+      </main>
+    </section>
+    <!-- hero end -->
+
+    <!-- about start -->
+  
+    <section id="about">
+ 
+          <h1 class="text-judul">Hallo</h1>
+            <div class="section-card">
+          <div class="card card_1">
+
+            <img src="img/foto1.jfif" alt="" class="card-img">
+           <div class="text-card">
+            <p>hallo nama saya adalah dawud mauludi,
+              saya adalah...
+            </p>
+           </div>
+           <a href="#poopup" class="btn">Lihat detail</a>
+          </div>
+          <div class="card card_2">
+
+            <img src="img/sekolah.jfif" alt="" class="card-img">
+            <div class="text-card">
+              <p>hallo nama saya adalah dawud mauludi,
+                saya adalah...
+              </p>
+             </div>
+             <a href="#" class="btn">Lihat detail</a>
+            </div>
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="poopup" id="poopup">
+      <div class="poopup-content">
+        <div class="poopup-img">
+          <img src="img/foto1.jfif" alt="">
+        </div>
+
+        <div class="poopup-header">
+          <h1>Profil saya</h1>
+        </div>
+        <div class="poopup-text">
+          <p>Saya dalah dawud mauludi,saya adalah anak pertama dari dua bersaudara. Saya tinggal di
+            Jawa Timur,pasuruan. Saya lahir pada tanggal 11-04-2006. Impian saya adaalah ingin menjadi programmer
+            full stack developer.
+          </p>
+          <p>Untuk mewujudkan semua ituu saya harus rajin belajar tentang pemrogramman,meskipun nggaaa kayak
+            anak-anak yang lain,anak-anak yang lain mempunyai leptop tetapi saya tidak. Tapi, semua ituu bukan menjadi
+            hambatan untuk proses belajar ku. Aku sangat yakin bahwa semua akan inndah pada masanya
+          </p>
+        </div>
+        <a href="#" class="poopup-btn">Kembali</a>
+      </div>
+    </div>
+
+    <!-- about end -->
+
+
+
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typingEffect = new Typed(".multi-text", {
+        strings: ["Web developer", "designer", "code"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500,
+      });
+    </script>
+  </body>
+</html>

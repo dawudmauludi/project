@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:ital,wght@0,300;0,500;1,300;1,400&family=Smokum&family=Tilt+Prism&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 1rem;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.navbar-logo a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-logo span {
+  color: red;
+}
+
+nav ul {
+  list-style: none;
+  width: 40%;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+  transition: 0.2s ease;
+}
+
+.navbar-nav ul li a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #02f196;
+  transform: scaleX(0);
+}
+
+.navbar-nav ul li a:hover {
+  color: #02f196;
+}
+
+.navbar-nav ul li a:hover::after {
+  border-bottom: 1px solid #02f196;
+  transform: scaleX(0.5);
+  transition: 0.3s linear;
+}
+
+
+#hamburger-menu {
+  display: none;
+}
+
+/* navbar end */
+
+/* Hero section */
+
+.hero{
+height: 600px;
+padding: 20px;
+margin-left: 40px;
+margin-right: 40px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.hero img{
+  width: 100%;
+  height: 500px;
+}
+
+.text{
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #000;
+}
+
+.text::after{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  color: #ae00ff;
+}
+
+.hero-text h1{
+  font-size: 3rem;
+  color: #4e504f;
+}
+
+.multi-text{
+  color: #02f196;
+}
+
+.hero-text p{
+  font-size: 1.2rem;
+}
+
+
+.icon{
+  margin-top: 20px;
+}
+
+.instagram:hover{
+  border: none;
+  color: white;
+  background:linear-gradient(#ae00ff,#ff01aa,#e40707,#f16d02) ;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+.facebook:hover{
+  border: none;
+  color: white;
+  background:#0804ff ;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+.twitter:hover{
+  border: none;
+  color: white;
+  background:#0468ff ;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.download{
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #02f196;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: #000000;
+  font-size: 1rem;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Hero section end */
+
+/* About start */
+
+
+
+/* About end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media (max-width: 768px) {
+    html{
+        font-size: 60.5%;
+    }
+
+    #hamburger-menu{
+        display: inline-block;
+        color: #000;
+    }
+
+    nav ul{
+        position: absolute;
+       right: 0;
+       top: 0;
+       height: 100vh;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+       background-color: #02f196;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.active {
+        transform: translateX(0);
+      }
+
+      
+
+
+
+
+}
